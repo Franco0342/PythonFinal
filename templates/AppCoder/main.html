@@ -8,12 +8,12 @@
 
 {% block bodytitleoptions %}
 {% if request.user.is_authenticated %}
-<a class="btn btn-primary" href="{% url 'UserCoderLogOut' %}"> Logout </a>
+<a class="btn btn-danger" href="{% url 'UserCoderLogOut' %}"> Logout </a>
 {% else %}
-<a class="btn btn-primary" href="{% url 'UserCoderLogin' %}"> Login </a>
+<a class="btn btn-danger" href="{% url 'UserCoderLogin' %}"> Login </a>
 <div class="space">
 </div>
-<a class="btn btn-primary" href="{% url 'UserCoderLogon' %}"> Create user </a>
+<a class="btn btn-danger" href="{% url 'UserCoderLogon' %}"> Create user </a>
 {% endif %}
 {% endblock %}
 
@@ -22,10 +22,9 @@
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-8">
                 {% block bodyheader %}
-                <h1 class="bodyheadertittle">Comparta sus comentarios y conocimientos sobre literatura, musica y
-                    cine.</h1>
-                <p class="bodyheadertext">Una manera rapida y simple de compartir con otras personas su conocimiento y/u
-                    opinion acerca de libros, musica, peliculas!!!</p>
+                <h1 class="bodyheadertittle">FANATIC BLOG</h1>
+                <h5 class="bodyheadertext">Comparta sus opiniones sobre literatura, musica y
+                    cine.!</h5>
                 {% endblock %}
             </div>
         </div>
@@ -37,12 +36,11 @@
     <div class="container px-5 my-5">
         <div class="row gx-5 justify-content space-evenly ">
             <div class="col-lg-4 mb-5 mb-lg-0 ">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                        class="bi bi-collection"></i>
+                <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><i
+                        class="bi bi-book"></i>
                 </div>
                 <h2 class="h4 fw-bolder">Literatura</h2>
-                <p>Como usuario usted podra crear comentarios sobre los libros, revistar, comics y no solo ver lo que
-                    otros escriben.....</p>
+                <p>Como usuario usted podra crear comentarios sobre los libros, mangas y comics, como tambien observar las opiniones de otras personas</p>
                 {% if user.is_authenticated %}
                 <a class="text-decoration-none" href="{% url 'TPFinalLiteraturaCrear' %}">
                     Ir a cargar nueva literatura
@@ -61,11 +59,10 @@
                 </a>
             </div>
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i>
+                <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><i class="bi bi-music-note-beamed"></i>
                 </div>
                 <h2 class="h4 fw-bolder">Musica</h2>
-                <p>Como usuario usted podra crear comentarios sobre la Música, discos, artistas y no solo ver lo que
-                    otros escriben.....</p>
+                <p>Como usuario usted podra crear comentarios sobre la Música y artistas ,como tambien observar las opiniones de otras personas</p>
                 {% if user.is_authenticated %}
                 <a class="text-decoration-none" href="{% url 'TPFinalMusicaCrear' %}">
                     Ir a cargar musica
@@ -84,11 +81,10 @@
                 </a>
             </div>
             <div class="col-lg-4 ">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i>
+                <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><i class="bi bi-camera-reels"></i>
                 </div>
                 <h2 class="h4 fw-bolder">Cine</h2>
-                <p>Como usuario usted podra crear comentarios sobre los peliculas, series, etc.. y no solo ver lo que
-                    otros escriben.....</p>
+                <p>Como usuario usted podra crear comentarios sobre los peliculas y series, como tambien observar las opiniones de otras personas</p>
                 {% if user.is_authenticated %}
                 <a class="text-decoration-none" href="{% url 'TPFinalCineCrear' %}">
                     ir a cargar films
@@ -108,7 +104,6 @@
             </div>
             <br>
             <br>
-            <!--para que un super user pueda administrar usuarios-->
             {% if user.is_authenticated and user.is_superuser%}
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
@@ -143,10 +138,10 @@
                 {% endfor %}
             </ul>
             {% endif %}
-            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i>
+            <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i>
             </div>
             <h2 class="fw-bolder">Pongase en contacto</h2>
-            <p class="lead mb-0">Nos encantaria conocer su opinion.</p>
+            <p class="lead mb-0">Dejanos saber tu opinion.</p>
         </div>
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-3">

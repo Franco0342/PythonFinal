@@ -12,8 +12,8 @@
 {% endblock %}
 
 {% block bodyheader %}
-<h1 class="display-5 fw-bolder text-white mb-2">Cargue su literatura</h1>
-<p class="lead text-white-50 mb-4">A continuacion cargue todos los datos de su literatura!</p>
+<h1 class="display-5 fw-bolder text-white mb-2">Cargue su Libro</h1>
+<p class="lead text-white-50 mb-4">A continuacion cargue todos los datos de su coleccion Libros!</p>
 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
 </div>
 {% endblock %}
@@ -50,7 +50,7 @@
                     <th>Descripcion del libro <em>*</em></th>
                     {% endif %}
                     {% if field.label == "Imglit" %}
-                    <th>Imagen literatura</th>
+                    <th>Imagen</th>
                     {% endif %}
                     <th>{{ field }}</th>
                     <th>{{ field.media }}</th>
@@ -58,7 +58,7 @@
                 {% endfor %}
             </table>
             <br>
-            <label style="color: black;">Los campos con * son obligatorios.</label><br>
+            <label style="color: black;">Los campos con # son obligatorios.</label><br>
             <p><input type="submit" value="Grabar" onclick="validate()"/></p>
         </form>
     </div>

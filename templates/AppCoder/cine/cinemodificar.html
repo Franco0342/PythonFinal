@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block bodyheader %}
-<h1 class="display-5 fw-bolder text-white mb-2">Modifique sus peliculas</h1>
+<h1 class="display-5 fw-bolder text-white mb-2">Modifique sus peliculas/series</h1>
 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
 </div>
 {% endblock %}
@@ -34,7 +34,7 @@
                         {% for field in formulariocine %}
                         <tr>
                             {% if field.label == "Nombre pelicula cine" %}
-                            <th>Nombre de la pelicula <em>*</em></th>
+                            <th>Nombre de la pelicula o serie <em>*</em></th>
                             {% endif %}
                             {% if field.label == "Nombre director cine" %}
                             <th>Nombre del director <em>*</em></th>
@@ -43,7 +43,7 @@
                             <th>Descripcion <em>*</em></th>
                             {% endif %}
                             {% if field.label == "Imgcin" %}
-                            <th>Imagen literatura</th>
+                            <th>Imagen</th>
                             {% endif %}
                             <th>{{ field }}</th>
                             <th>{{ field.media }}</th>
@@ -57,7 +57,7 @@
                     <td class="tddata"></td>
                     {% endif %}
                     <br> <br>
-                    <label style="color: black;">Los campos con * son obligatorios.</label><br>
+                    <label style="color: black;">Los campos con # son obligatorios.</label><br>
                     <p><input type="submit" value="Modificar" onclick="validate()"/></p>
                 </form>
             </div>

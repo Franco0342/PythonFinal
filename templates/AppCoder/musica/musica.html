@@ -46,7 +46,7 @@
                         <th>Descripcion <em>*</em></th>
                         {% endif %}
                         {% if field.label == "Imgmus" %}
-                        <th>Imagen musica</th>
+                        <th>Imagen</th>
                         {% endif %}
                         <th>{{ field }}</th>
                         <th>{{ field.media }}</th>
@@ -54,7 +54,7 @@
                     {% endfor %}
                 </table>
                 <br>
-                <label style="color: black;">Los campos con * son obligatorios.</label><br>
+                <label style="color: black;">Los campos con # son obligatorios.</label><br>
                 <p><input type="submit" value="Grabar" onclick="validate()"/></p>
             </form>
         </div>

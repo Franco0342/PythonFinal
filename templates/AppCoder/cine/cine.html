@@ -12,7 +12,7 @@
 
 {% block bodyheader %}
 <h1 class="display-5 fw-bolder text-white mb-2">Cargue su coleccion de cine</h1>
-<p class="lead text-white-50 mb-4">A continuación cargue todos los datos de su colección de películas!</p>
+<p class="lead text-white-50 mb-4">A continuación cargue todos los datos de su colección de películas o series!</p>
 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
 </div>
 {% endblock %}
@@ -38,7 +38,7 @@
                         {% for field in formulariocine %}
                         <tr>
                             {% if field.label == "Nombre pelicula cine" %}
-                            <th>Nombre de la pelicula <em>*</em></th>
+                            <th>Nombre de la pelicula o serie<em>*</em></th>
                             {% endif %}
                             {% if field.label == "Nombre director cine" %}
                             <th>Nombre del director <em>*</em></th>
@@ -47,7 +47,7 @@
                             <th>Descripcion <em>*</em></th>
                             {% endif %}
                             {% if field.label == "Imgcin" %}
-                            <th>Imagen literatura</th>
+                            <th>Imagen</th>
                             {% endif %}
                             <th>{{ field }}</th>
                             <th>{{ field.media }}</th>
@@ -55,7 +55,7 @@
                         {% endfor %}
                     </table>
                     <br>
-                    <label style="color: black;">Los campos con * son obligatorios.</label><br>
+                    <label style="color: black;">Los campos con # son obligatorios.</label><br>
                     <p><input type="submit" value="Grabar" onclick="validate()"/></p>
                 </form>
             </div>
