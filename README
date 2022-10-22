@@ -1,0 +1,35 @@
+Franco Rimelle - Trabajo Inicial: Generacion de la base del proyecto, creacion de las 
+funcionalidades basicas y los template aplicando CRUD. Login, Logout, about, Registro, avatar. 
+Vinculacion de las rutas y adaptacion de las funcionalidades al sistema.incluida la modificacion
+de informacion registrada en la base de datos. Upload de proyecto a GitHub.
+ 
+Franco Oro - Modificaciones Trabajo: Busqueda, armado e implementacion de los template 
+finales. Mejora de la visualizacion. Diseño de la base de datos/models, definicion de los 
+permisos/roles de los usuarios en las paginas, mejora de algunas funcionalidades e 
+implementacion de la la funcionalidad editar perfil, creacion de la app de mensajes,.
+
+Franco Delfino - Documentación: . Documentacion de las pruebas unitarias, listado de casos de 
+prueba, correccion y busqueda de solucion a errores, readme, implementacion. video de prueba, 
+implementacion de css/html/javaS, implementacion y mejora de el manejo de datos del usuario ()
+
+ #Adjunto link con el video mostrando la pagina:
+ (                       )
+ #Proyecto final de Python de Coder House
+ Decidimos realziar el proyecto de 0, y cambiar la base e idea del mismo
+
+ El proyecto se pensó como una página donde se puede compartir opiniones de literatura, musica y cine.
+ Para esto los usuarios que deseen subir contenido deberan loguearse. Para ver el contenido no hace falta crearse un
+ usario.
+
+ Las pruebas realizadas fueron:
+
+- Se creó un usuario desde el formulario que solicita los datos.
+- Se creó un dato de literatura desde el formulario que solicita los datos.
+- Se creó un dato de musica desde el formulario que solicita los datos.
+- Se creó un dato de cine desde el formulario que solicita los datos.
+- Se buscaron datos de literaturas ya cargadas desde el formulario que solicita los datos,
+  donde realiza la búsqueda con al menos un dato ingresado coincidente.
+- Se buscaron datos de musica ya cargadas desde el formulario que solicita los datos,
+  donde realiza la búsqueda con al menos un dato ingresado coincidente.
+- Se buscaron datos de cine ya cargadas desde el formulario que solicita los datos,
+  donde realiza la búsqueda con al menos un dato ingresado coincidente. 
