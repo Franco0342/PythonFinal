@@ -41,9 +41,11 @@
                     {{ user.get_username }}</a>
                 <div class="space">
                 </div>
+                
                 <li class="nav-item"><a class="nav-link active" aria-current="page"
                                         href="{% url 'Mensajes:TPFinalMensajeBuscarVer' %}">Ver mis mensajes</a>
                 </li>
+
                 {% endif %}
                 {% block bodytitleoptions %}
                 {% endblock %}
